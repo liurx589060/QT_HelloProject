@@ -1,0 +1,12 @@
+#ifndef MAINPLUGIN_GLOBAL_H
+#define MAINPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MAINPLUGIN_LIBRARY)
+#  define MAINPLUGINSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MAINPLUGINSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MAINPLUGIN_GLOBAL_H
